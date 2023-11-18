@@ -1,0 +1,831 @@
+h1{
+    color: blue;
+}
+
+header {
+    position: relative;
+    background-image: url('Recurso\ 2.png');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    overflow: hidden; /* Para asegurarse de que el contenido no sobresalga del encabezado */
+    position: relative; /* Para que los elementos hijos usen la posición relativa a este contenedor */
+}
+
+.boton {
+    position: absolute;
+    height: 22.9%;
+    width: 30.4%;
+    top: 608.3%;
+    left: 72.4%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #ffbf01;
+    color: #fff;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 12;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 13;
+}
+
+.modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(32, 100, 100, 1); 
+    color: #f8f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    z-index: 13;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 13;
+}
+
+.modal-contenido2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(32, 100, 100, 1); 
+    color: #f8f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    z-index: 13;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.cerrar2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+.boton2 {
+    position: absolute;
+    height: 22.9%;
+    width: 30.4%;
+    top: 636.3%;
+    left: 72.8%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #ffbf01;
+    color: #fff;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 12;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 97%;
+    height: 100%;
+    background-color: rgba(32, 100, 100, 0.5); 
+}
+
+.overlay2 {
+    position: absolute;
+    top: 100;
+    left: 18px;
+    width: 97%;
+    height: 550%;
+    background-color: rgba(32, 100, 100, 0.5); 
+}
+
+.florh1{
+
+    position: absolute;
+    top: 11%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+}
+
+
+
+.florh2{
+
+    position: absolute;
+    top: 15%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florh3{
+
+    position: absolute;
+    top: 89%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florh4{
+
+    position: absolute;
+    top: 87%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florb1{
+
+    position: absolute;
+    top: 129%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florb2{
+
+    position: absolute;
+    top: 332%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florb3{
+
+    position: absolute;
+    top: 460%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florb4{
+
+    position: absolute;
+    top: 460%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.florb5{
+
+    position: absolute;
+    top: 545%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+
+.taza1{
+
+    position: absolute;
+    top: 327%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.taza2{
+
+    position: absolute;
+    top: 460%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.licu1{
+
+    position: absolute;
+    top: 440%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    z-index: 3;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.licu2{
+
+    position: absolute;
+    top: 532%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: auto;
+    z-index: 1;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+
+}
+
+.imagenC{
+    position: absolute;
+    top: 338%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 980px;
+    height: auto;
+    z-index: 1;
+}
+
+
+
+
+.img2 {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: auto;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+    z-index: 1;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
+.imagenCuadrado{
+    position: absolute;
+    top: 147%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: auto;
+    z-index: 2;
+}
+
+.texto{
+    position: absolute;
+    top: 139%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: auto;
+    z-index: 3;
+}
+.texto2{
+    position: absolute;
+    top: 299%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: auto;
+    z-index: 3;
+}
+
+.parrafo{
+    position: absolute;
+    top: 189%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: auto;
+    z-index: 4;
+}
+.texto3{
+    position: absolute;
+    top: 388%;
+    left: 5%;
+    width: 600px;
+    height: auto;
+    z-index: 7;
+}
+.texto4{
+    position: absolute;
+    top: 608%;
+    left: 4%;
+    width: 680px;
+    height: auto;
+    z-index: 7;
+}
+
+.ventas{
+    position: absolute;
+    top: 602%;
+    left: 62.5%;
+    color: rgb(252, 249, 249);
+    font-size: 27px;
+    font-weight: bold;
+    width: 600px;
+    height: auto;
+    z-index: 10;
+}
+
+.sueno{
+    position: absolute;
+    top: 630%;
+    left: 62.5%;
+    color: rgb(252, 249, 249);
+    font-size: 27px;
+    font-weight: bold;
+    width: 600px;
+    height: auto;
+    z-index: 10;
+}
+
+.info3{
+    position: absolute;
+    top: 405%;
+    left: 12%;
+    color: black;
+    font-size: 20px;
+    width: 600px;
+    height: auto;
+    z-index: 8;
+}
+
+.info4{
+    position: absolute;
+    top: 611%;
+    left: 10%;
+    color: black;
+    font-size: 22px;
+    width: 600px;
+    height: auto;
+    z-index: 10;
+}
+
+.info2{
+    position: absolute;
+    font-size: 18px;
+    top: 287%;
+    left: 53%;
+    width: 750px;
+    height: auto;
+    color: aliceblue;
+    z-index: 4;
+}
+
+.info{
+    position: absolute;
+    top: 189%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    height: auto;
+    z-index: 5;
+
+}
+
+.foto1{
+    position: absolute;
+    top: 172%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 630px;
+    height: auto;
+    z-index: 6;
+    
+}
+.foto1_1{
+    position: absolute;
+    top: 124%;
+    left: 52%;
+    width: 550px;
+    height: 600px;
+    z-index: 7;
+    transform: rotate(2deg);
+}
+
+.licuadora{
+    position: absolute;
+    top: 208%;
+    left: 39%;
+    width: 160px;
+    height: auto;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+}
+
+.flor{
+    position: absolute;
+    top: 220%;
+    left: -2%;
+    width: 140px;
+    height: auto;
+    z-index: 7;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+}
+
+.foto2{
+    position: absolute;
+    top: 241%;
+    left: 6%;
+    width: 449px;
+    height: 370px;
+    z-index: 8;
+}
+
+.foto2_2{
+    position: absolute;
+    top: 240%;
+    left: 7%;
+    width: 426px;
+    height: 376px;
+    z-index: 7;
+    transform: rotate(-6deg);
+}
+
+.josua2{
+    position: absolute;
+    top: 230%;
+    left: 45%;
+    width: 526px;
+    height: auto;
+    z-index: 7;
+}
+
+.heroe1{
+
+    position: absolute;
+    top: 310%;
+    left: 5%;
+    width: 500px;
+    height: auto;
+    z-index: 7;
+}
+
+.video{
+
+    position: absolute;
+    top: 344%;
+    left: 50%;
+    width: 500px;
+    height: auto;
+    z-index: 7;
+}
+
+.cuadro1{
+    position: absolute;
+    top: 460%;
+    left: 10%;
+    width: 700px;
+    height: 510px;
+    z-index: 7;
+}
+
+.encuentro1{
+    position: absolute;
+    top: 450%;
+    left: 50%;
+    width: 550px;
+    height: auto;
+    z-index: 9;
+}
+
+.foto3{
+
+    position: absolute;
+    top: 480%;
+    left: 60%;
+    width: 300px;
+    height: auto;
+    z-index: 9;
+}
+
+.foto4{
+
+    position: absolute;
+    top: 480%;
+    left: 36%;
+    width: 300px;
+    height: auto;
+    z-index: 9;
+}
+
+.foto5{
+
+    position: absolute;
+    top: 480%;
+    left: 12%;
+    width: 300px;
+    height: auto;
+    z-index: 9;
+}
+
+.foto6{
+
+    position: absolute;
+    top: 480%;
+    left: 12%;
+    width: 300px;
+    height: auto;
+    z-index: 9;
+}
+
+.foto7{
+
+    position: absolute;
+    top: 480%;
+    left: 12%;
+    width: 300px;
+    height: auto;
+    z-index: 9;
+}
+
+
+.fondo1{
+    position: absolute;
+    top: 560%;
+    left: 0%;
+    width: 1349px;
+    height: 600px;
+    z-index: -1;
+    
+}
+
+.cronicasU{
+    position: absolute;
+    top: 555%;
+    left: 15%;
+    width: 510px;
+    height: auto;
+    z-index: 9;
+}
+
+.linea{
+    position: absolute;
+    top: 542%;
+    left: 56%;
+    width: 250px;
+    height: auto;
+    z-index: 9; 
+}
+
+.carretera2{
+    position: absolute;
+    top: 508%;
+    left: -6%;
+    width: 2150px;
+    height: auto;
+    z-index: 5;
+}
+
+.dosBo{
+    position: absolute;
+    top: 597%;
+    left: 55%;
+    width: 450px;
+    height: auto;
+    z-index: 9;
+}
+
+.rBlanco {
+    width: 2698px; 
+    height: 600px; 
+    background-color: white;
+    position: absolute;
+    top: 656%;
+    left: 0%;  
+}
+
+.amarillo {
+    width: 1349px; 
+    height: 100px; 
+    background-color: rgb(254, 187, 1);
+    position: absolute;
+    top: 752%;
+    left: 0%;  
+    z-index: 10;
+}
+
+.flores{
+    position: absolute;
+    top: 658%;
+    left: 0%;
+    width: 677px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+}
+
+.flores2{
+    position: absolute;
+    top: 658%;
+    left: 50%;
+    width: 677px;
+    height: 600px;
+    z-index: 4;
+    opacity: 0.1; 
+    animation: fadeOut 5s forwards;
+}
+
+.miZona{
+    position: absolute;
+    top: 670%;
+    left: 45%;
+    width: 500px;
+    height: auto;
+    z-index: 9;
+    
+}
+
+.mapa{
+    position: absolute;
+    top: 668%;
+    left: -13%;
+    width: 750px;
+    height: auto;
+    z-index: 9;
+    
+}
+
+.infoFinal{
+
+    position: absolute;
+    top: 707%;
+    left: 46.5%;
+    width: 750px;
+    height: auto;
+    font-size: 18px;
+    color: black;
+    z-index: 9;
+
+}
+
+#mapa {
+    position: absolute;
+    width: 35%;
+    height: 300px;
+    top: 681%;
+    left: 2%;
+    background-color: #f0f0f0;
+    z-index: 10;
+}
+
+.mapa2{
+
+    position: absolute;
+    width: 30%;
+    height: 300px;
+    top: 681%;
+    left: 2%;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+   .redes{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 0%;
+    height: 90px;
+    top: 753%;
+    left: 45%;
+    background-color: #f0f0f0;
+    z-index: 11;
+   }
+
+   .imagen{
+    height: 50%;
+    margin: 20px;
+    
+   }
+   
+   .imagen2{
+    height: 90%;
+    margin: 8px;
+    
+   }
+  
+  
+
+body {
+    height: 1000px;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('Recurso\ 1.png');
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif; 
+    
+}
+
+
+
